@@ -8,13 +8,7 @@ export default defineConfig({
       provider: 'v8',
       all: true,
       include: ['src/*'],
-      exclude: [
-        '**/*.spec.ts',
-        '**/*.d.ts',
-        'src/lib/**/models/**/*',
-        '**/test-utils/**/*',
-        'src/plugin/settings.ts'
-      ],
+      exclude: ['**/*.spec.js'],
       reporter: ['cobertura', 'text', 'text-summary']
     }
   }
